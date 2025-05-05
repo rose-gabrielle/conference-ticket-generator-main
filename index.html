@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="main.js"></script>
   
   <title>Frontend Mentor | Conference ticket generator</title>
 
@@ -15,15 +17,50 @@
   </style>
 </head>
 <body>
-
+<div class="image-container">
+  <div class="svg-image">
+    <img src="/assets/images/pattern-lines.svg" alt="">
+  </div>
+  <div class="svg-image">
+    <img src="/assets/images/pattern-squiggly-line-top.svg" alt="">
+  </div>
+  <div class="svg-image">
+    <img src="/assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="">
+  </div>
+  <div class="svg-image">
+    <img src="/assets/images/pattern-circle.svg" alt="">
+  </div>
+  <div class="svg-image">
+    <img src="/assets/images/pattern-circle.svg" alt="">
+  </div>
+  <div class="content-container">
+    <div id="form-content" class="form-content">
+      <img class="logo" src="/assets/images/logo-full.svg" alt="">
+      <div class="headings">
+        <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p>Secure your spot at next year's biggest coding conference.</p>
+      </div>
+      <form  id="ticket-form">
+        <div class="form-item">
+          <label for="file-input">Upload Avatar</label>
+          <div id="drop-area" class="upload-box">
+            <input type="file" id="file-input" class="file-input" accept="image/png, image/jpeg">
+            <img id="uploaded-image" src="/assets/images/icon-upload.svg" alt="">
+            <div id="message-action">Drag and drop or click to upload</div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
   <!-- Form starts -->
 
-  Your Journey to Coding Conf 2025 Starts Here!
+  
 
-  Secure your spot at next year's biggest coding conference.
+  
 
-  Upload Avatar
-  Drag and drop or click to upload
+  
+  
   Upload your photo (JPG or PNG, max size: 500KB).
 
   Full Name
