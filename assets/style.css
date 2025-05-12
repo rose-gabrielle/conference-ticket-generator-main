@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Neutral-0: hsl(0, 0%, 100%);
+--Neutral-300: hsl(252, 6%, 83%);
+--Neutral-500: hsl(245, 15%, 58%);
+--Neutral-700: hsl(245, 19%, 35%);
+--Neutral-900: hsl(248, 70%, 10%);
+
+--Orange-500: hsl(7, 88%, 67%);
+--Orange-700: hsl(7, 71%, 60%);
+
+--Gradient-text-start: hsl(7, 86%, 67%);
+--gradient-text-end: hsl(0, 0%, 100%);
+}
+
+
+/* img{
+    max-width: 100%;
+    display: block;
+} */
+@font-face{
+    font-family: Inconsolata;
+    src: url(/assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+body{
+    background-color: var(--Neutral-900);
+    color: white;
+    min-height: 100vh;
+    font-family: 'Inconsolata', serif;
+}
+.image-container{
+    background: url(/assets/images/background-desktop.png) no-repeat center;
+    width: 100%;
+    position: relative;
+    aspect-ratio: 16/9;
+ 
+}
+.svg-image{
+    position: absolute;
+}
+/* placer les images d,arriere plan */
+
+.svg-image:nth-child(2) {
+    top: 100px;
+    right: 0;
+}
+.svg-image:nth-child(3) {
+    left: 0;
+    bottom: 0;
+}
+
+.svg-image:nth-child(5) {
+    top: 50%;
+    right: 350px;
+}
+
+/* mise en forme du formulaire */
+/* .form-container{
+    text-align: center;
+} */
+.headings h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight:700 ;
+}
+.headings p{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+/* .form-item label{
+        width: 80px;
+        padding-right: .09em;
+        text-align: right;
+} */
+.form-item{
+    width: 100%;
+    margin: 20px auto;
+    max-width: 460px;
+}
+.form-content{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 460px;
+}
+
+.upload-box{
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--Neutral-700);
+    border-radius: 8px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='white' stroke-width='4' stroke-dasharray='21' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    /* max-width:460px; */
+}
+.file-input{
+    display: none;
+}
+.file-actions{
+    display: none;
+}
+
+.file-input{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+input{
+    background: transparent;
+    outline: none;
+    border:1px solid white;
+    border-radius: 6px;
+    width: 100%;
+    display: block;
+    padding: 1rem .5rem;
+}
+label{
+    display: block;
+}
+
+/* mise en forme du ticket */
+.en-tete{
+    text-align: center;
+    margin: 2rem;
+}
+.conteneur-ticket{
+    font-size: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    background: url(/assets/images/pattern-ticket.svg);
+    background-repeat: no-repeat;
+    aspect-ratio: 16/9;
+    background-size: contain;
+    padding: 1rem;
+    position: relative;
+    
+}
+.conteneur-ticket div{
+    display: block;
+}
+.num-ticket{
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 1.75rem;
+    right: 1px;
+    top: 36%;
+}
