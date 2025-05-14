@@ -36,30 +36,35 @@ body{
     font-family: 'Inconsolata', serif;
 }
 .image-container{
-    background: url(/assets/images/background-desktop.png) no-repeat center;
+    background: url(../assets/images/background-desktop.png) no-repeat center;
     width: 100%;
-    position: relative;
+    /* position: relative; */
     aspect-ratio: 16/9;
  
 }
-.svg-image{
+.image-container{
     position: absolute;
+    background: url(../assets/images/pattern-lines.svg) no-repeat;
+    width: 100%;
 }
 /* placer les images d,arriere plan */
-
+/* 
 .svg-image:nth-child(2) {
+    background: url(../assets/images/pattern-squiggly-line-top.sv);
     top: 100px;
     right: 0;
 }
 .svg-image:nth-child(3) {
+    background: url(/assets/images/pattern-squiggly-line-bottom-desktop.svg);
     left: 0;
     bottom: 0;
 }
 
 .svg-image:nth-child(5) {
+    background:url(/assets/images/pattern-circle.svg) ;
     top: 50%;
     right: 350px;
-}
+} */
 
 /* mise en forme du formulaire */
 /* .form-container{
@@ -91,6 +96,10 @@ body{
     margin: 0 auto;
     max-width: 460px;
 }
+.image-ticket{
+    width: 50px;
+
+}
 
 .upload-box{
     padding: 1rem;
@@ -101,7 +110,7 @@ body{
     /* max-width:460px; */
 }
 .file-input{
-    display: none;
+    /* display: none; */
 }
 .file-actions{
     display: none;
@@ -113,16 +122,30 @@ body{
     border: none;
 }
 input{
+    z-index: 20;
+    color: white;
     background: transparent;
     outline: none;
     border:1px solid white;
     border-radius: 6px;
     width: 100%;
-    display: block;
+    /* display: block; */
     padding: 1rem .5rem;
 }
 label{
     display: block;
+}
+button{
+    background-color: var(--Orange-700);
+    outline: none;
+    border: none;
+    width: 100%;
+    display: block;
+    padding: .5rem;
+    border-radius: 6px;
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 /* mise en forme du ticket */
@@ -152,4 +175,10 @@ label{
     font-size: 1.75rem;
     right: 1px;
     top: 36%;
+}
+.attribution{
+    position: absolute;
+    /* display: none; */
+    text-align: center;
+    justify-content: flex-end;
 }
