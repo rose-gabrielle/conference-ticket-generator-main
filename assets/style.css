@@ -27,7 +27,7 @@
 } */
 @font-face{
     font-family: Inconsolata;
-    src: url(/assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+    src: url(assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
 }
 body{
     background-color: var(--Neutral-900);
