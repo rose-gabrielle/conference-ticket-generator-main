@@ -182,7 +182,7 @@ button{
     width: 100%;
     margin: 0 auto;
     max-width: 600px;
-    background: url(/assets/images/pattern-ticket.svg);
+    background: url('./images/pattern-ticket.svg');
     background-repeat: no-repeat;
     aspect-ratio: 16/9;
     background-size: contain;
