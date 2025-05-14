@@ -35,10 +35,37 @@ body{
     min-height: 100vh;
     font-family: 'Inconsolata', serif;
 }
-.image-container{
+
+.image-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* aspect-ratio: 16/9; */
+  background: 
+    url(/assets/images/pattern-lines.svg) no-repeat top left,
+    url(/assets/images/pattern-squiggly-line-top.svg) no-repeat top right,
+    url(/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg) no-repeat bottom left,
+    url(/assets/images/pattern-circle.svg) no-repeat center right,
+    url(../assets/images/background-mobile.png) no-repeat center;
+  background-size: auto, auto, auto, auto, cover;
+}
+@media(min-width:1305px){
+.image-container {
+  position: relative;
+  width: 100%;
+  /* aspect-ratio: 16/9; */
+  background: 
+    url(/assets/images/pattern-lines.svg) no-repeat top left,
+    url(/assets/images/pattern-squiggly-line-top.svg) no-repeat top right,
+    url(/assets/images/pattern-squiggly-line-bottom-desktop.svg) no-repeat bottom left,
+    url(/assets/images/pattern-circle.svg) no-repeat center right,
+    url(../assets/images/background-desktop.png) no-repeat center;
+  background-size: auto, auto, auto, auto, cover;
+}
+}
+/* .image-container{
     background: url(../assets/images/background-desktop.png) no-repeat center;
     width: 100%;
-    /* position: relative; */
     aspect-ratio: 16/9;
  
 }
@@ -47,20 +74,19 @@ body{
     background: url(../assets/images/pattern-lines.svg) no-repeat;
     width: 100%;
 }
-/* placer les images d,arriere plan */
-/* 
-.svg-image:nth-child(2) {
+
+.image-container {
     background: url(../assets/images/pattern-squiggly-line-top.sv);
     top: 100px;
     right: 0;
 }
-.svg-image:nth-child(3) {
+.image-container {
     background: url(/assets/images/pattern-squiggly-line-bottom-desktop.svg);
     left: 0;
     bottom: 0;
 }
 
-.svg-image:nth-child(5) {
+.image-container {
     background:url(/assets/images/pattern-circle.svg) ;
     top: 50%;
     right: 350px;
