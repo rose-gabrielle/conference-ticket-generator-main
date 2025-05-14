@@ -166,6 +166,11 @@ button{
     position: relative;
     
 }
+@media(max-width:505px){
+    p{
+        font-size: .5em;
+    }
+}
 .conteneur-ticket div{
     display: block;
 }
